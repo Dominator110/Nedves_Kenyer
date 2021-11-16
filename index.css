@@ -1,0 +1,43 @@
+#elso{
+    border:3px solid green;
+    width: 300px;
+    height: 400px;
+}
+#idojaras{
+    overflow: auto;
+    border:3px solid green;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    left:400px;
+    top: 8px;
+
+}
+#listaz{
+    overflow: auto;
+    border:2px solid orange;
+    width: 692px;
+    height: 400px;
+    position: fixed;
+    left:8px;
+    top: 500px;
+
+}
+
+#gomb{
+    border:1px solid orange;
+    text-align: left;
+    position: fixed;
+    top:470px;
+    width: 100px;
+    height: 25px;
+}
+#gomb2{
+    border:3px solid blue;
+    text-align: left;
+    position: fixed;
+    top:150px;
+    left:150px ;
+    width: 100px;
+    height: 25px;
+}
