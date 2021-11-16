@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function server() {
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.onload = function() {
+                document.getElementById("idojaras").innerHTML = this.responseText;
+            }
+
+            // Kérés küldése
+            xmlhttp.open("POST","beolvas_ment.php");
+            xmlhttp.send();
+        }
+
+        function server2(){
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.onload = function(){
+                document.getElementById("listaz").innerHTML = this.responseText;
+            }
+            xmlhttp.open("POST","beolvas_ment.php");
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="betolt"><p>Imre Gábor</p><p>Ez a program egy adatbázishoz kapcsolódik ahová egy másik programmal feltöltöttük több város időjárási körülményeit. A jobbra található táblában szerverről lekért adatokat láthatunk, alul pedig adatbázisból listázza ki őket, a gombok segítségével.</p></div>
+    <div id="idojaras"></div>
+    <div id="listaz"></div>
+
+    
+    <input type="button" value="listáz: " onclick="server2()" id="gomb1" name="">
+    <input type="button" value="betölt/ment"  onClick="server()" id="gomb2" name="">
+
+    
+</body>
+</html>
