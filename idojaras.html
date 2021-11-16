@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function szerver(){
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.onload = function(){
+                document.getElementById("idojaras").innerHTML = this.responseText;
+            }
+            xmlhttp.open("Post","beolvas_ment.php");
+            xmlhttp.send();
+        }
+        function szerver2(){
+            const xmlhttp = new XMLHttpRequest();
+            xmlhttp.onload = function(){
+                document.getElementById("listaz").innerHTML = this.responseText;
+            }
+            xmlhttp.open("Post","listaz.php");
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="elso"><p>Bárdfalvi Rolandnak hívnak</p><p>Ez a program ki írja 4 városnak az időjárás adatait és le menti egy adatbázisba és kí irja a jobb oldali zöld mezőbe az időjárás adatokat az alsóba pedig a városokat! </p></div>
+    <div id="idojaras"></div>
+    <input type="button" value="listaz:" onclick="szerver2()" id="gomb" name="" >
+    <input type="button" value="betolt/ment" onclick="szerver()" id="gomb2" name="" >
+    <div id="listaz"></div>
+    
+</body>
+</html>
