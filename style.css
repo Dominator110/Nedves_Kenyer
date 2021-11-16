@@ -1,0 +1,62 @@
+#betolt{
+    overflow: auto;
+    background-color: gray;
+    border: 3px solid green;
+    border-radius: 5%;
+    width: 400px;
+    height: 500px;
+    left: 400px;
+    position: fixed;
+    box-shadow: 1px green;
+}
+#idojaras{
+    overflow: auto;
+    border: 3px solid green;
+    border-radius: 5%;
+    background-color: grey;
+    width: 400px;
+    height: 500px;
+    left: 1000px;
+    top: 8px;
+    position: fixed;
+}
+#listaz{
+    overflow: auto;
+    border: 3px solid orange;
+    border-radius: 5%;
+    background-color: grey;
+    width: 992px;
+    height: 300px;
+    left: 400px;
+    top: 600px;
+    position: fixed;
+    box-shadow: 1px orange;
+}
+#gomb1{
+    background-color: grey;
+    border-radius: 30%;
+    color: orange;
+    border: 3px solid orange;
+    text-align: center;
+    position: fixed;
+    top: 550px;
+    left: 400px;
+    width: 100px;
+    height: 50px;
+}
+#gomb2{
+    background-color: black;
+    color: lightgreen;
+    border: 3px solid blue;
+    border-radius: 20%;
+    text-align: center;
+    position: fixed;
+    top: 100px;
+    left: 550px;
+    width: 100px;
+    height: 25px;
+}
+p{
+    position: relative;
+    top: 100px;
+}
